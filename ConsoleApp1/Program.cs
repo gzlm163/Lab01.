@@ -14,3 +14,13 @@ switch (Console.ReadLine())
         exponent = Convert.ToInt32(Console.ReadLine());
 
         result = 1;
+
+        for (counter = 0; counter < exponent; ++counter)
+        {
+            result *= originalNumber;
+        }
+
+        Console.WriteLine($" Result: {originalNumber}^{exponent} = {result} ");
+
+        break;
+
