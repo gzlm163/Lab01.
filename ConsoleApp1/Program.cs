@@ -24,3 +24,20 @@ switch (Console.ReadLine())
 
         break;
 
+    case "2":
+        string inputNumber;
+        string resultNumber;
+        char secondDigit;
+
+        Console.Write(" Enter number x (x >= 100): ");
+        inputNumber = Console.ReadLine();
+
+        secondDigit = inputNumber[1];
+        resultNumber = inputNumber[0] + inputNumber.Substring(2) + secondDigit;
+
+        Console.WriteLine($" Result: n = {resultNumber} ");
+
+        break;
+}
+
+Console.ReadKey();
