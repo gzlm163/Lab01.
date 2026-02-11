@@ -1,43 +1,41 @@
 ﻿Console.Write(" Choose task: ");
 
-switch (Console.ReadLine())
-{
-    case "1":
-        int originalNumber;
-        int exponent;
-        int result;
-        int counter;
+switch (Console.ReadLine()) {
+  case "1":
+    int originalNumber;
+    int exponent;
+    int result;
+    int counter;
 
-        Console.Write(" Enter number a: ");
-        originalNumber = Convert.ToInt32(Console.ReadLine());
-        Console.Write(" Enter exponent: ");
-        exponent = Convert.ToInt32(Console.ReadLine());
+    Console.Write(" Enter number a: ");
+    originalNumber = Convert.ToInt32(Console.ReadLine());
+    Console.Write(" Enter exponent: ");
+    exponent = Convert.ToInt32(Console.ReadLine());
 
-        result = 1;
+    result = 1;
 
-        for (counter = 0; counter < exponent; ++counter)
-        {
-            result *= originalNumber;
-        }
+    for (counter = 0; counter < exponent; ++counter) {
+      result *= originalNumber;
+    }
 
-        Console.WriteLine($" Result: {originalNumber}^{exponent} = {result} ");
+    Console.WriteLine($" Result: {originalNumber}^{exponent} = {result} ");
 
-        break;
+    break;
 
-    case "2":
-        string inputNumber;
-        string resultNumber;
-        char secondDigit;
+  case "2":
+    string inputNumber;
+    string resultNumber;
+    char secondDigit;
 
-        Console.Write(" Enter number x (x >= 100): ");
-        inputNumber = Console.ReadLine();
+    Console.Write(" Enter number x (x >= 100): ");
+    inputNumber = Console.ReadLine();
 
-        secondDigit = inputNumber[1];
-        resultNumber = inputNumber[0] + inputNumber.Substring(2) + secondDigit;
+    secondDigit = inputNumber[1];
+    resultNumber = inputNumber[0] + inputNumber.Substring(2) + secondDigit;
 
-        Console.WriteLine($" Result: n = {resultNumber} ");
+    Console.WriteLine($" Result: n = {resultNumber} ");
 
-        break;
+    break;
 }
 
 Console.ReadKey();
