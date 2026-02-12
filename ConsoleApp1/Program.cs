@@ -5,7 +5,6 @@ switch (Console.ReadLine()) {
     int originalNumber;
     int exponent;
     int result;
-    int counter;
 
     Console.Write(" Enter the base number: ");
     originalNumber = Convert.ToInt32(Console.ReadLine());
@@ -14,7 +13,7 @@ switch (Console.ReadLine()) {
 
     result = 1;
 
-    for (counter = 0; counter < exponent; ++counter) {
+    for (int iterationСounter = 0; iterationСounter < exponent; ++iterationСounter) {
       result *= originalNumber;
     }
 
