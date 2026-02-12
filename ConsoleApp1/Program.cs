@@ -7,7 +7,7 @@ switch (Console.ReadLine()) {
     int result;
     int counter;
 
-    Console.Write(" Enter number a: ");
+    Console.Write(" Enter the base number: ");
     originalNumber = Convert.ToInt32(Console.ReadLine());
     Console.Write(" Enter exponent: ");
     exponent = Convert.ToInt32(Console.ReadLine());
